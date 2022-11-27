@@ -1,0 +1,1311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="PreCompile.cpp">
+      <Filter>00.GameApp\00.Precom</Filter>
+    </ClCompile>
+    <ClCompile Include="UserGame_Resources_Shader.cpp">
+      <Filter>00.GameApp\01.Core\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshLoadLevel.cpp">
+      <Filter>01.GameObject\03.Level\MeshLoadLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="UserGame.cpp">
+      <Filter>00.GameApp\01.Core</Filter>
+    </ClCompile>
+    <ClCompile Include="UserGame_Resources.cpp">
+      <Filter>00.GameApp\01.Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayer.cpp">
+      <Filter>01.GameObject\03.Level\MeshLoadLevel\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemBoxManager.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemBoxWindow.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingItemLevel.cpp">
+      <Filter>01.GameObject\03.Level\SettingItemLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemBase.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipmentItem.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="MiscItem.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="UseableItem.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemBox.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateItemDB.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox</Filter>
+    </ClCompile>
+    <ClCompile Include="ChattingPacket.cpp">
+      <Filter>02.GameServer\UserPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerTestLevel.cpp">
+      <Filter>02.GameServer\ServerTempTest</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardClass.cpp">
+      <Filter>02.GameServer\ServerTempTest\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardEvent.cpp">
+      <Filter>02.GameServer\ServerTempTest\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="ChattingInput.cpp">
+      <Filter>02.GameServer\ServerTempTest\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="ChattingHistory.cpp">
+      <Filter>02.GameServer\ServerTempTest\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="LumiaLevel.cpp">
+      <Filter>01.GameObject\03.Level</Filter>
+    </ClCompile>
+    <ClCompile Include="LumiaLevel.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="LumiaMap.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultLevel.cpp">
+      <Filter>01.GameObject\03.Level\ResultLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleLevel.cpp">
+      <Filter>01.GameObject\03.Level\TitleLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="EndingLevel.cpp">
+      <Filter>01.GameObject\03.Level\EndingLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbyLevel.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="Appmain.cpp">
+      <Filter>00.GameApp</Filter>
+    </ClCompile>
+    <ClCompile Include="CharSelectPacket.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerNumberPacket.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="GameJoinPacket.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadyPacket.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>02.GameServer</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClient.cpp">
+      <Filter>02.GameServer</Filter>
+    </ClCompile>
+    <ClCompile Include="GameJoinPacket2.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="SetPlayerNumberPacket.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingLumiaPacket.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="LumiaLoadingManager.cpp">
+      <Filter>02.GameServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleIDInput.cpp">
+      <Filter>01.GameObject\03.Level\TitleLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbyToLumiaPacket.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleUIController.cpp">
+      <Filter>01.GameObject\03.Level\TitleLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitlePrologueBG.cpp">
+      <Filter>01.GameObject\03.Level\TitleLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBG.cpp">
+      <Filter>01.GameObject\03.Level\TitleLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleStartButton.cpp">
+      <Filter>01.GameObject\03.Level\TitleLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleFoxLogo.cpp">
+      <Filter>01.GameObject\03.Level\TitleLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="AStarNode.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\NavMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMesh.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\NavMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Lobby_ButtonOne.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Lobby_ButtonTwo.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Lobby_CharFull.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Lobby_Map.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Lobby_PortraitBg.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Lobby_StartButton.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbyBackground.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbyUIController.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_CharPicture.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Equip.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Inventory.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_ItemBox.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Skill.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Status.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_TestMouse.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerUIController.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="StartPointSelectPacket.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CharMovementPacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CharAnimationPacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingLevel.cpp">
+      <Filter>01.GameObject\03.Level\LoadingLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="CharStatPacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingLevel_BackDrop.cpp">
+      <Filter>01.GameObject\03.Level\LoadingLevel\01.Actor\00.BackDrop</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingLevel_LoadPercent.cpp">
+      <Filter>01.GameObject\03.Level\LoadingLevel\01.Actor\01.LoadingPercent</Filter>
+    </ClCompile>
+    <ClCompile Include="MousePointer.cpp">
+      <Filter>01.GameObject\02.GlobalActor\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="UIButton.cpp">
+      <Filter>01.GameObject\02.GlobalActor\UI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Lobby_GameStartButton.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI\GameStartButton</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStartPacket.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet\GameStartPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="Dummy.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Dummy</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingEndPacket.cpp">
+      <Filter>01.GameObject\03.Level\LoadingLevel\00.Packet\01.LoadingEndPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelChangePacket.cpp">
+      <Filter>01.GameObject\03.Level\LoadingLevel\00.Packet\02.LevelChangePacket</Filter>
+    </ClCompile>
+    <ClCompile Include="Monsters.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster_AttackState.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base\00.FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster_CrowdControlState.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base\00.FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster_MainState.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base\00.FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster_NormalState.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base\00.FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Wolf.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\01.Wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerInfoManager.cpp">
+      <Filter>02.GameServer\Infomation\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterInfoManager.cpp">
+      <Filter>02.GameServer\Infomation\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_ItemSettingHelper.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI\UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="CreationCommandPacket.cpp">
+      <Filter>01.GameObject\03.Level\LoadingLevel\00.Packet\00.LoadingPacket\00.CreationCommandPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLevel.cpp">
+      <Filter>01.GameObject\03.Level\TestLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="TestOBB.cpp">
+      <Filter>01.GameObject\03.Level\TestLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="CharCrowdControlPacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Rio.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterStat.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="RioArrow.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketCreateProjectile.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="Macro.cpp">
+      <Filter>01.GameObject\00.Constant</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketSoundPlay.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTimeController.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\GameController</Filter>
+    </ClCompile>
+    <ClCompile Include="IUnit.cpp">
+      <Filter>01.GameObject\01.BaseActor\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTimeSyncPacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CharEffectPacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="RioDSkill.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Time.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Hyunwoo.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Hyunwoo</Filter>
+    </ClCompile>
+    <ClCompile Include="HyunwooQEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Hyunwoo</Filter>
+    </ClCompile>
+    <ClCompile Include="HyunwooREffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Hyunwoo</Filter>
+    </ClCompile>
+    <ClCompile Include="Bat.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\02.Bat</Filter>
+    </ClCompile>
+    <ClCompile Include="Chicken.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\03.Chicken</Filter>
+    </ClCompile>
+    <ClCompile Include="Bear.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\04.Bear</Filter>
+    </ClCompile>
+    <ClCompile Include="Boar.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\05.Boar</Filter>
+    </ClCompile>
+    <ClCompile Include="Dog.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\06.Dog</Filter>
+    </ClCompile>
+    <ClCompile Include="Weekline.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\07.Weekline</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterDebugWindow.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base\99.IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_WinLose.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLevelBox.cpp">
+      <Filter>01.GameObject\03.Level\TestLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMap.cpp">
+      <Filter>01.GameObject\03.Level\TestLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="CharDeathPacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_BloodBackground.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterDamagePacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterStateChangePacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Jackie.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Jackie</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Notice.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JackieQEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Jackie</Filter>
+    </ClCompile>
+    <ClCompile Include="JackieEEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Jackie</Filter>
+    </ClCompile>
+    <ClCompile Include="EndingUIController.cpp">
+      <Filter>01.GameObject\03.Level\EndingLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_FOW.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterCrowdControlPacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperLoop.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelUpSystem.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\GameController</Filter>
+    </ClCompile>
+    <ClCompile Include="Yuki.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_HPBars.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="OutLineTestLevel.cpp">
+      <Filter>01.GameObject\03.Level\OutLineTestLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="OutLineTestWindow.cpp">
+      <Filter>01.GameObject\03.Level\OutLineTestLevel\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="YukiREffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_HyperMap.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Aya.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Aya</Filter>
+    </ClCompile>
+    <ClCompile Include="AyaBullet.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Aya</Filter>
+    </ClCompile>
+    <ClCompile Include="OutLineTestActor.cpp">
+      <Filter>01.GameObject\03.Level\OutLineTestLevel\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="OutLineTestMap.cpp">
+      <Filter>01.GameObject\03.Level\OutLineTestLevel\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="SlowEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="StunEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelUpEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="CharFullSelectEffect.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="YukiQEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki</Filter>
+    </ClCompile>
+    <ClCompile Include="YukiQSlashEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicAttackEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_CalculateHelper.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI\UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="AyaESpectrum.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Aya</Filter>
+    </ClCompile>
+    <ClCompile Include="AyaREffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Aya</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_CharFollow.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="RioWSkillWind.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowTestLevel.cpp">
+      <Filter>01.GameObject\03.Level\ShadowTestLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="FogOfWar.cpp">
+      <Filter>01.GameObject\04.PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="HyunwooWEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Hyunwoo</Filter>
+    </ClCompile>
+    <ClCompile Include="ProhibitedArea.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowTestActor.cpp">
+      <Filter>01.GameObject\03.Level\ShadowTestLevel\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowTestMap.cpp">
+      <Filter>01.GameObject\03.Level\ShadowTestLevel\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbyLevel.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="TempLobbyRenderer.cpp">
+      <Filter>01.GameObject\03.Level\LobbyLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="AreaChangeTrigger.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Minimap.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="NoticeBroadcastPacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="ProhibitedAreaPacket.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemListWindow.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="RioDSkillEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio\DSkillEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="RioDSkillArrow.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio\DSkillEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="RioDSkillFirstShot.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio\DSkillEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_DamagePopUp.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_ItemRoute.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_SkillGauge.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="YukiESlashEffect.cpp">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="00.GameApp">
+      <UniqueIdentifier>{97e149dc-7ede-46de-a3aa-c1dd3bb2785a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.GameApp\00.Precom">
+      <UniqueIdentifier>{0d0b75c7-5726-42b1-aa92-879451e131c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.GameApp\01.Core">
+      <UniqueIdentifier>{e9202fd3-1d82-4b24-95c9-d9783411c25a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.GameApp\01.Core\Resources">
+      <UniqueIdentifier>{097aabc9-6df0-4d53-a9ed-77681a8002e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.GameApp\01.Core\CustomVertex">
+      <UniqueIdentifier>{16842167-2534-42db-8026-796a267ad72b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject">
+      <UniqueIdentifier>{7b108a2e-bcd5-4fed-b937-95af2ec8b5b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\00.Constant">
+      <UniqueIdentifier>{fe7eca9f-4c96-41c7-9a5e-95d402951209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\01.BaseActor">
+      <UniqueIdentifier>{da4abc2b-3a0e-4baf-9045-7c4fd649a8b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\02.GlobalActor">
+      <UniqueIdentifier>{5b1798ae-0845-4fbe-8a16-76e0e38dd1a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level">
+      <UniqueIdentifier>{e6998438-49d5-445a-83ae-2e78e52a45df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\MeshLoadLevel">
+      <UniqueIdentifier>{e7fc81f9-dff4-4828-83dd-89047b857231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\MeshLoadLevel\Actor">
+      <UniqueIdentifier>{6dfae342-c1d4-4e78-af66-4069ade280e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\SettingItemLevel">
+      <UniqueIdentifier>{1a76d953-e652-4ef7-a945-097cf5d62d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameServer">
+      <UniqueIdentifier>{ec59804c-ce69-4aa8-8e47-3c267954bad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameServer\ServerTempTest">
+      <UniqueIdentifier>{960b4ba1-5372-4860-847f-205985d0f620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameServer\ServerTempTest\Chat">
+      <UniqueIdentifier>{ca2a399b-8418-4a26-90b4-d76d4113447c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel">
+      <UniqueIdentifier>{19f35235-a09b-466f-87df-ae6814653a3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\EndingLevel">
+      <UniqueIdentifier>{e27bf43a-d54c-4e79-af41-e0df728cf7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\TitleLevel">
+      <UniqueIdentifier>{a56589c2-b60a-46ae-a6a5-ace05495ffee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\ResultLevel">
+      <UniqueIdentifier>{321d0616-5aee-47bd-b7a2-beb61fb99d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameServer\UserPacket">
+      <UniqueIdentifier>{7eb45933-a75d-4834-ace2-5b878554f920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\NavMesh">
+      <UniqueIdentifier>{334917f0-e7bf-42b0-9856-9d921017c925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor">
+      <UniqueIdentifier>{e1cce04c-4094-49a6-ac6d-e9d77e1032ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\TitleLevel\UI">
+      <UniqueIdentifier>{859b87d4-611c-461e-9a0d-8fd944a92dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\UI">
+      <UniqueIdentifier>{7e136e69-cfc6-4c6b-9e7a-54327f7aa09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\ItemBox">
+      <UniqueIdentifier>{9d59b63a-92d1-40aa-98c2-e7108f6f4c56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\ImGui">
+      <UniqueIdentifier>{e248f191-76c6-41b3-9a24-4dd6c0ce8063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\Item">
+      <UniqueIdentifier>{d3852990-4947-495d-8087-5498048dc846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Packet">
+      <UniqueIdentifier>{ef6238dd-17df-4fe0-a06b-aa55108914a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LoadingLevel">
+      <UniqueIdentifier>{446b4198-33aa-4c01-8a4e-d66569f67300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LoadingLevel\00.Packet">
+      <UniqueIdentifier>{1f9ca13a-a89e-4fac-a2df-20cfd0ed5c2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LoadingLevel\00.Packet\00.LoadingPacket">
+      <UniqueIdentifier>{6135eee1-0cff-4578-985f-3558175e87fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LoadingLevel\00.Packet\01.LoadingEndPacket">
+      <UniqueIdentifier>{a71199a1-9829-4c52-8d34-cfcb89f0c96a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LoadingLevel\00.Packet\02.LevelChangePacket">
+      <UniqueIdentifier>{a16ff5df-de93-4253-9821-6ee36e7acc8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LoadingLevel\01.Actor">
+      <UniqueIdentifier>{fb0a050c-a75a-4090-b4f5-9dbec0c794fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LoadingLevel\01.Actor\00.BackDrop">
+      <UniqueIdentifier>{0b81a8dd-1108-4c73-92e4-ec8e78ef22e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LoadingLevel\01.Actor\01.LoadingPercent">
+      <UniqueIdentifier>{1902fcaa-03a3-4bfa-b53f-27d3aa630256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\02.GlobalActor\Mouse">
+      <UniqueIdentifier>{2ecbf556-7309-495c-91fa-c23b34125e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\02.GlobalActor\UI">
+      <UniqueIdentifier>{802a2ee1-9785-4fa8-a06c-6ae1aca8ac3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\02.GlobalActor\UI\Button">
+      <UniqueIdentifier>{5ba1d700-f553-4fa5-9f68-acbbbecd3612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Dummy">
+      <UniqueIdentifier>{d0df6d51-8665-4e69-968f-4544eeb1f2df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters">
+      <UniqueIdentifier>{4be7792c-6408-4c7a-a48b-671971ab9849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base">
+      <UniqueIdentifier>{045c964c-a846-4aa9-8049-b710b8bc939d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base\00.FSM">
+      <UniqueIdentifier>{f5352501-83e9-4099-a10f-8dfc590bc267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters\01.Wolf">
+      <UniqueIdentifier>{17111006-5fa0-4905-ab75-ceec7c145b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameServer\Infomation">
+      <UniqueIdentifier>{037c719b-95f7-46b2-84c3-c1a46786146d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameServer\Infomation\Monsters">
+      <UniqueIdentifier>{ba7ec77a-837f-4b66-872f-a1d2f8aa302c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameServer\Infomation\Player">
+      <UniqueIdentifier>{84464456-48bf-4a56-adcc-b5ea016f2319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\UI\UIHelper">
+      <UniqueIdentifier>{20901b7d-a3ea-4f62-84b3-3ed81db5e4fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LoadingLevel\00.Packet\00.LoadingPacket\00.CreationCommandPacket">
+      <UniqueIdentifier>{b2775f2b-b6ee-4d5f-93a7-eefe23bf4603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\TestLevel">
+      <UniqueIdentifier>{02c5c2e2-dfc9-49e2-9772-25d4c803e6ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Character">
+      <UniqueIdentifier>{bf4d605e-60b7-46a9-bcbf-0cb4cd56edf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio">
+      <UniqueIdentifier>{282fe2d7-3fcd-4313-a257-12bb60ee19c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\GameController">
+      <UniqueIdentifier>{41127990-4ebb-463d-a1f2-118043585a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\01.BaseActor\Unit">
+      <UniqueIdentifier>{581c2fa8-4540-4fa1-b1cf-3baa938964f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Packet\Enum">
+      <UniqueIdentifier>{11eb97b2-eb8d-4670-9994-7494496ce340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Character\Hyunwoo">
+      <UniqueIdentifier>{6a2ff16f-c540-46d5-9fd6-3b6fbba18d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters\02.Bat">
+      <UniqueIdentifier>{c681239d-8611-4fa4-8436-dc3eecfffb7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters\03.Chicken">
+      <UniqueIdentifier>{e23964cf-6628-48d6-956a-ec7ac4b1af12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters\04.Bear">
+      <UniqueIdentifier>{20df218c-2fa7-41c8-95c8-529bc5a192d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters\05.Boar">
+      <UniqueIdentifier>{62c8b77d-ee22-410e-93da-97c72f2d2673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters\06.Dog">
+      <UniqueIdentifier>{dea5f50c-706a-4522-a70a-1101dce9f8a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters\07.Weekline">
+      <UniqueIdentifier>{496c1ff8-d476-404d-8e1a-19f6e612fa00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base\99.IMGUI">
+      <UniqueIdentifier>{d3850157-39c2-4bde-badf-773fe43d29ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Packet\Monster">
+      <UniqueIdentifier>{229490e9-123f-4671-97a4-096ef51b1cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Character\Jackie">
+      <UniqueIdentifier>{bbd5cf88-75a3-4974-9565-6d2b24037134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\OutLineTestLevel">
+      <UniqueIdentifier>{d6f366ac-c7c1-451f-a56a-63058dab044e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\OutLineTestLevel\IMGUI">
+      <UniqueIdentifier>{c964f6a9-4f4e-46ad-8487-14408bedb90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\OutLineTestLevel\Actor">
+      <UniqueIdentifier>{44118a06-ff35-4b09-b530-1d61d91b0d26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki">
+      <UniqueIdentifier>{d4582ba2-215c-4a17-8d61-7036a9e549f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Character\Aya">
+      <UniqueIdentifier>{eaece77b-4574-4ade-b578-79d03d2547a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect">
+      <UniqueIdentifier>{17d27d47-3e6e-4ee0-b013-2b59d39befc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\ShadowTestLevel">
+      <UniqueIdentifier>{f9fbfe84-cb23-4146-837d-12839dd9461f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\ShadowTestLevel\Actor">
+      <UniqueIdentifier>{85f21b70-d71a-4206-bbba-01ddba106d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\ShadowTestLevel\IMGUI">
+      <UniqueIdentifier>{2166421b-24bb-459e-9892-a67cd31d963d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\04.PostProcess">
+      <UniqueIdentifier>{08fe365c-7991-44b7-8b0c-2abfb2e89b4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LobbyLevel">
+      <UniqueIdentifier>{995552e0-6a2f-485f-b768-003985badeb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LobbyLevel\Packet">
+      <UniqueIdentifier>{066b3202-ccb9-4468-bec0-025f8d829ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LobbyLevel\Packet\GameStartPacket">
+      <UniqueIdentifier>{9828b190-3e45-49ae-a9b7-a665bffc7713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LobbyLevel\UI">
+      <UniqueIdentifier>{14b5c0b5-bfb6-48ba-8869-0f7f3dd66096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LobbyLevel\UI\GameStartButton">
+      <UniqueIdentifier>{b0d712a7-dae6-4137-b8a7-dcf8f8a584a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LobbyLevel\UI\Effect">
+      <UniqueIdentifier>{8280ee57-7128-4098-a502-f708eefd5efc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Trigger">
+      <UniqueIdentifier>{7e5102bd-96bc-45b1-9d7a-b0537ab4d7a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio\DSkillEffects">
+      <UniqueIdentifier>{49efc6c6-7e13-4c63-a772-98e1903910da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameObject\03.Level\LumiaLevel\PostProcess">
+      <UniqueIdentifier>{d16a4fc9-7154-4c65-8010-4b36dbbabd5b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PreCompile.h">
+      <Filter>00.GameApp\00.Precom</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomVertex.h">
+      <Filter>00.GameApp\01.Core\CustomVertex</Filter>
+    </ClInclude>
+    <ClInclude Include="UserGame_Resources_Shader.h">
+      <Filter>00.GameApp\01.Core\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshLoadLevel.h">
+      <Filter>01.GameObject\03.Level\MeshLoadLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="UserGame.h">
+      <Filter>00.GameApp\01.Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TestPlayer.h">
+      <Filter>01.GameObject\03.Level\MeshLoadLevel\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>01.GameObject\00.Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBoxManager.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBoxWindow.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingItemLevel.h">
+      <Filter>01.GameObject\03.Level\SettingItemLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBase.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="EquipmentItem.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>01.GameObject\00.Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="MiscItem.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="UseableItem.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBox.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox</Filter>
+    </ClInclude>
+    <ClInclude Include="ChattingPacket.h">
+      <Filter>02.GameServer\UserPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerTestLevel.h">
+      <Filter>02.GameServer\ServerTempTest</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardClass.h">
+      <Filter>02.GameServer\ServerTempTest\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardEvent.h">
+      <Filter>02.GameServer\ServerTempTest\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="ChattingInput.h">
+      <Filter>02.GameServer\ServerTempTest\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="ChattingHistory.h">
+      <Filter>02.GameServer\ServerTempTest\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="LumiaLevel.h">
+      <Filter>01.GameObject\03.Level</Filter>
+    </ClInclude>
+    <ClInclude Include="LumiaLevel.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="LumiaMap.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultLevel.h">
+      <Filter>01.GameObject\03.Level\ResultLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleLevel.h">
+      <Filter>01.GameObject\03.Level\TitleLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="EndingLevel.h">
+      <Filter>01.GameObject\03.Level\EndingLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbyLevel.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="ePacketID.h">
+      <Filter>01.GameObject\00.Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="CharSelectPacket.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerNumberPacket.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="GameJoinPacket.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadyPacket.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServer.h">
+      <Filter>02.GameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClient.h">
+      <Filter>02.GameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameJoinPacket2.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="SetPlayerNumberPacket.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingLumiaPacket.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="LumiaLoadingManager.h">
+      <Filter>02.GameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleIDInput.h">
+      <Filter>01.GameObject\03.Level\TitleLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbyToLumiaPacket.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleUIController.h">
+      <Filter>01.GameObject\03.Level\TitleLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitlePrologueBG.h">
+      <Filter>01.GameObject\03.Level\TitleLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBG.h">
+      <Filter>01.GameObject\03.Level\TitleLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleStartButton.h">
+      <Filter>01.GameObject\03.Level\TitleLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleFoxLogo.h">
+      <Filter>01.GameObject\03.Level\TitleLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMesh.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\NavMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="AStarNode.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\NavMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Lobby_ButtonOne.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Lobby_ButtonTwo.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Lobby_CharFull.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Lobby_Map.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Lobby_PortraitBg.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Lobby_StartButton.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbyBackground.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbyUIController.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_CharPicture.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Equip.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Inventory.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_ItemBox.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Skill.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Status.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_TestMouse.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerUIController.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="StartPointSelectPacket.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="CharMovementPacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="CharAnimationPacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="FTConstant.h">
+      <Filter>01.GameObject\00.Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingLevel.h">
+      <Filter>01.GameObject\03.Level\LoadingLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="CharStatPacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingLevel_BackDrop.h">
+      <Filter>01.GameObject\03.Level\LoadingLevel\01.Actor\00.BackDrop</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingLevel_LoadPercent.h">
+      <Filter>01.GameObject\03.Level\LoadingLevel\01.Actor\01.LoadingPercent</Filter>
+    </ClInclude>
+    <ClInclude Include="MousePointer.h">
+      <Filter>01.GameObject\02.GlobalActor\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="UIButton.h">
+      <Filter>01.GameObject\02.GlobalActor\UI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Lobby_GameStartButton.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI\GameStartButton</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStartPacket.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\Packet\GameStartPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="Dummy.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Dummy</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingEndPacket.h">
+      <Filter>01.GameObject\03.Level\LoadingLevel\00.Packet\01.LoadingEndPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelChangePacket.h">
+      <Filter>01.GameObject\03.Level\LoadingLevel\00.Packet\02.LevelChangePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="Monsters.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterStateInfo.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Wolf.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\01.Wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInfo.h">
+      <Filter>02.GameServer\Infomation\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInfoManager.h">
+      <Filter>02.GameServer\Infomation\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterInfo.h">
+      <Filter>02.GameServer\Infomation\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterInfoManager.h">
+      <Filter>02.GameServer\Infomation\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_ItemSettingHelper.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI\UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="CreationCommandPacket.h">
+      <Filter>01.GameObject\03.Level\LoadingLevel\00.Packet\00.LoadingPacket\00.CreationCommandPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="TestLevel.h">
+      <Filter>01.GameObject\03.Level\TestLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="TestOBB.h">
+      <Filter>01.GameObject\03.Level\TestLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="CharCrowdControlPacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Rio.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterStat.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="RioArrow.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketCreateProjectile.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketSoundPlay.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTimeController.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\GameController</Filter>
+    </ClInclude>
+    <ClInclude Include="IUnit.h">
+      <Filter>01.GameObject\01.BaseActor\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTimeSyncPacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="CharEffectPacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="eCrowdControlType.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="eProjectileType.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="RioDSkill.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Time.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Hyunwoo.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Hyunwoo</Filter>
+    </ClInclude>
+    <ClInclude Include="HyunwooQEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Hyunwoo</Filter>
+    </ClInclude>
+    <ClInclude Include="HyunwooREffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Hyunwoo</Filter>
+    </ClInclude>
+    <ClInclude Include="Bat.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\02.Bat</Filter>
+    </ClInclude>
+    <ClInclude Include="Chicken.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\03.Chicken</Filter>
+    </ClInclude>
+    <ClInclude Include="Bear.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\04.Bear</Filter>
+    </ClInclude>
+    <ClInclude Include="Boar.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\05.Boar</Filter>
+    </ClInclude>
+    <ClInclude Include="Dog.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\06.Dog</Filter>
+    </ClInclude>
+    <ClInclude Include="Weekline.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\07.Weekline</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterDebugWindow.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Monsters\00.Base\99.IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_WinLose.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TestLevelBox.h">
+      <Filter>01.GameObject\03.Level\TestLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="TestMap.h">
+      <Filter>01.GameObject\03.Level\TestLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="CharDeathPacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_BloodBackground.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterDamagePacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterStateChangePacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Jackie.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Jackie</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Notice.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JackieQEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Jackie</Filter>
+    </ClInclude>
+    <ClInclude Include="JackieEEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Jackie</Filter>
+    </ClInclude>
+    <ClInclude Include="EndingUIController.h">
+      <Filter>01.GameObject\03.Level\EndingLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_FOW.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterCrowdControlPacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperLoop.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelUpSystem.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\GameController</Filter>
+    </ClInclude>
+    <ClInclude Include="Yuki.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelUPData.h">
+      <Filter>01.GameObject\00.Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_HPBars.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="OutLineTestLevel.h">
+      <Filter>01.GameObject\03.Level\OutLineTestLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="OutLineTestWindow.h">
+      <Filter>01.GameObject\03.Level\OutLineTestLevel\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="YukiREffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_HyperMap.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Aya.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Aya</Filter>
+    </ClInclude>
+    <ClInclude Include="AyaBullet.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Aya</Filter>
+    </ClInclude>
+    <ClInclude Include="OutLineTestActor.h">
+      <Filter>01.GameObject\03.Level\OutLineTestLevel\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="OutLineTestMap.h">
+      <Filter>01.GameObject\03.Level\OutLineTestLevel\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="SlowEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="StunEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelUpEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="CharFullSelectEffect.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel\UI\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="YukiQEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki</Filter>
+    </ClInclude>
+    <ClInclude Include="YukiQSlashEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicAttackEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_CalculateHelper.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI\UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="AyaESpectrum.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Aya</Filter>
+    </ClInclude>
+    <ClInclude Include="AyaREffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Aya</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_CharFollow.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="RioWSkillWind.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowTestLevel.h">
+      <Filter>01.GameObject\03.Level\ShadowTestLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="FogOfWar.h">
+      <Filter>01.GameObject\04.PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="HyunwooWEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Hyunwoo</Filter>
+    </ClInclude>
+    <ClInclude Include="ProhibitedArea.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowTestActor.h">
+      <Filter>01.GameObject\03.Level\ShadowTestLevel\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowTestMap.h">
+      <Filter>01.GameObject\03.Level\ShadowTestLevel\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbyLevel.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="TempLobbyRenderer.h">
+      <Filter>01.GameObject\03.Level\LobbyLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="AreaChangeTrigger.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Minimap.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="NoticeBroadcastPacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="ProhibitedAreaPacket.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="DeathEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\99.CommonEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemListWindow.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\ItemBox\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="RioDSkillEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio\DSkillEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="RioDSkillArrow.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio\DSkillEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="RioDSkillFirstShot.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Rio\DSkillEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_DamagePopUp.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_ItemRoute.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_SkillGauge.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="YukiESlashEffect.h">
+      <Filter>01.GameObject\03.Level\LumiaLevel\Actor\Character\Yuki</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

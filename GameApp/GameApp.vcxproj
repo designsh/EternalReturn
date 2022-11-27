@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ebcb3b1e-e274-47cc-adfb-b03df482d138}</ProjectGuid>
+    <RootNamespace>GameApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)\Bin\$(Platform)\$(Configuration)\;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)\Bin\$(Platform)\$(Configuration)\;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompile.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\;..\ThirdParty\Include\FBX\;</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompile.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\;..\ThirdParty\Include\FBX\;</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompile.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\;..\ThirdParty\Include\FBX\;</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies);</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompile.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\;..\ThirdParty\Include\FBX\;</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies);</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Appmain.cpp" />
+    <ClCompile Include="AreaChangeTrigger.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Aya.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="AyaBullet.cpp" />
+    <ClCompile Include="AyaESpectrum.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="AyaREffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BasicAttackEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Bat.cpp" />
+    <ClCompile Include="Bear.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Boar.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="CharAnimationPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CharCrowdControlPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CharDeathPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CharEffectPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CharFullSelectEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CharMovementPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CharSelectPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CharStatPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ChattingHistory.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ChattingInput.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ChattingPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Chicken.cpp" />
+    <ClCompile Include="CreateItemDB.cpp" />
+    <ClCompile Include="DeathEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="EndingUIController.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="FogOfWar.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HyperLoop.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HyunwooWEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ItemListWindow.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Jackie.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="JackieEEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="JackieQEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LevelUpEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LevelUpSystem.cpp" />
+    <ClCompile Include="MonsterCrowdControlPacket.cpp" />
+    <ClCompile Include="MonsterDamagePacket.cpp" />
+    <ClCompile Include="NoticeBroadcastPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="OutLineTestActor.cpp" />
+    <ClCompile Include="OutLineTestLevel.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="OutLineTestMap.cpp" />
+    <ClCompile Include="OutLineTestWindow.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ProhibitedArea.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ProhibitedAreaPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RioDSkillArrow.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RioDSkillEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RioDSkillFirstShot.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RioWSkillWind.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ShadowTestActor.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ShadowTestLevel.cpp" />
+    <ClCompile Include="ShadowTestMap.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="SlowEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StunEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TestLevelBox.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TestMap.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UI_BloodBackground.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UI_CalculateHelper.cpp" />
+    <ClCompile Include="UI_CharFollow.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UI_DamagePopUp.cpp" />
+    <ClCompile Include="UI_FOW.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UI_HPBars.cpp" />
+    <ClCompile Include="UI_HyperMap.cpp" />
+    <ClCompile Include="UI_ItemRoute.cpp" />
+    <ClCompile Include="UI_Minimap.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UI_Notice.cpp" />
+    <ClCompile Include="UI_SkillGauge.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UI_WinLose.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Dog.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GameTimeController.cpp" />
+    <ClCompile Include="GameTimeSyncPacket.cpp" />
+    <ClCompile Include="HyunwooQEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HyunwooREffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Macro.cpp" />
+    <ClCompile Include="MonsterDebugWindow.cpp" />
+    <ClCompile Include="MonsterStateChangePacket.cpp" />
+    <ClCompile Include="PacketCreateProjectile.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CreationCommandPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Dummy.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="EndingLevel.cpp" />
+    <ClCompile Include="EquipmentItem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GameClient.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GameJoinPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GameJoinPacket2.cpp" />
+    <ClCompile Include="GameServer.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GameStartPacket.cpp" />
+    <ClCompile Include="Hyunwoo.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LevelChangePacket.cpp" />
+    <ClCompile Include="LoadingEndPacket.cpp" />
+    <ClCompile Include="LoadingLevel.cpp" />
+    <ClCompile Include="LoadingLevel_BackDrop.cpp" />
+    <ClCompile Include="LoadingLevel_LoadPercent.cpp" />
+    <ClCompile Include="LoadingLumiaPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Lobby_GameStartButton.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Lobby_Map.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Lobby_StartButton.cpp" />
+    <ClCompile Include="LobbyToLumiaPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LobbyUIController.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Lobby_ButtonOne.cpp" />
+    <ClCompile Include="Lobby_ButtonTwo.cpp" />
+    <ClCompile Include="Lobby_CharFull.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Lobby_PortraitBg.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LumiaLoadingManager.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LumiaMap.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LobbyBackground.cpp" />
+    <ClCompile Include="MonsterInfoManager.cpp" />
+    <ClCompile Include="Monsters.cpp" />
+    <ClCompile Include="Monster_AttackState.cpp" />
+    <ClCompile Include="Monster_CrowdControlState.cpp" />
+    <ClCompile Include="Monster_MainState.cpp" />
+    <ClCompile Include="Monster_NormalState.cpp" />
+    <ClCompile Include="PacketSoundPlay.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PlayerUIController.cpp" />
+    <ClCompile Include="MousePointer.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Rio.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ItemBase.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ItemBox.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ItemBoxManager.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ItemBoxWindow.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="KeyboardClass.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="KeyboardEvent.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LobbyLevel.cpp" />
+    <ClCompile Include="LumiaLevel.cpp" />
+    <ClCompile Include="MiscItem.cpp" />
+    <ClCompile Include="NavMesh.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="AStarNode.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PlayerInfoManager.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PlayerNumberPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ReadyPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ResultLevel.cpp" />
+    <ClCompile Include="RioArrow.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RioDSkill.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ServerTestLevel.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="SetPlayerNumberPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="SettingItemLevel.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StartPointSelectPacket.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TempLobbyRenderer.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TestLevel.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TestOBB.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleBG.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleFoxLogo.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleIDInput.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleLevel.cpp" />
+    <ClCompile Include="TitlePrologueBG.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleStartButton.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleUIController.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UIButton.cpp" />
+    <ClCompile Include="UI_CharPicture.cpp" />
+    <ClCompile Include="UI_Equip.cpp" />
+    <ClCompile Include="UI_Inventory.cpp" />
+    <ClCompile Include="UI_ItemBox.cpp" />
+    <ClCompile Include="UI_ItemSettingHelper.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UI_Status.cpp" />
+    <ClCompile Include="TestPlayer.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MeshLoadLevel.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PreCompile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Precompile.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Precompile.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Precompile.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Precompile.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="UI_Skill.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UI_TestMouse.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="IUnit.cpp" />
+    <ClCompile Include="UI_Time.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UseableItem.cpp" />
+    <ClCompile Include="UserGame.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UserGame_Resources.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UserGame_Resources_Shader.cpp" />
+    <ClCompile Include="CharacterStat.cpp" />
+    <ClCompile Include="Weekline.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Wolf.cpp" />
+    <ClCompile Include="Yuki.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="YukiESlashEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="YukiQEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="YukiQSlashEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="YukiREffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AreaChangeTrigger.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Aya.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="AyaBullet.h" />
+    <ClInclude Include="AyaESpectrum.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="AyaREffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BasicAttackEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Bat.h" />
+    <ClInclude Include="Bear.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Boar.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="CharacterStat.h" />
+    <ClInclude Include="CharAnimationPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CharCrowdControlPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CharDeathPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CharEffectPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CharFullSelectEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CharMovementPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CharSelectPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CharStatPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ChattingHistory.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ChattingInput.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ChattingPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Chicken.h" />
+    <ClInclude Include="DeathEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="EndingUIController.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FogOfWar.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HyperLoop.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HyunwooWEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ItemListWindow.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Jackie.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="JackieEEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="JackieQEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LevelUPData.h" />
+    <ClInclude Include="LevelUpEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LevelUpSystem.h" />
+    <ClInclude Include="MonsterCrowdControlPacket.h" />
+    <ClInclude Include="MonsterDamagePacket.h" />
+    <ClInclude Include="NoticeBroadcastPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="OutLineTestActor.h" />
+    <ClInclude Include="OutLineTestLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="OutLineTestMap.h" />
+    <ClInclude Include="OutLineTestWindow.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ProhibitedArea.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ProhibitedAreaPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RioDSkillArrow.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RioDSkillEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RioDSkillFirstShot.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RioWSkillWind.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ShadowTestActor.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ShadowTestLevel.h" />
+    <ClInclude Include="ShadowTestMap.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="SlowEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StunEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TestLevelBox.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TestMap.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UI_BloodBackground.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UI_CalculateHelper.h" />
+    <ClInclude Include="UI_CharFollow.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UI_DamagePopUp.h" />
+    <ClInclude Include="UI_FOW.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UI_HPBars.h" />
+    <ClInclude Include="UI_HyperMap.h" />
+    <ClInclude Include="UI_ItemRoute.h" />
+    <ClInclude Include="UI_Minimap.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UI_Notice.h" />
+    <ClInclude Include="UI_SkillGauge.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UI_WinLose.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Dog.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="eProjectileType.h" />
+    <ClInclude Include="GameTimeController.h" />
+    <ClInclude Include="GameTimeSyncPacket.h" />
+    <ClInclude Include="HyunwooQEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HyunwooREffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MonsterDebugWindow.h" />
+    <ClInclude Include="MonsterStateChangePacket.h" />
+    <ClInclude Include="PacketCreateProjectile.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CreationCommandPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Dummy.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="eCrowdControlType.h" />
+    <ClInclude Include="EndingLevel.h" />
+    <ClInclude Include="ePacketID.h" />
+    <ClInclude Include="EquipmentItem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FTConstant.h" />
+    <ClInclude Include="GameClient.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="GameJoinPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="GameJoinPacket2.h" />
+    <ClInclude Include="GameServer.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="GameStartPacket.h" />
+    <ClInclude Include="Hyunwoo.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LevelChangePacket.h" />
+    <ClInclude Include="LoadingEndPacket.h" />
+    <ClInclude Include="LoadingLevel.h" />
+    <ClInclude Include="LoadingLevel_BackDrop.h" />
+    <ClInclude Include="LoadingLevel_LoadPercent.h" />
+    <ClInclude Include="LoadingLumiaPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Lobby_GameStartButton.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Lobby_Map.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Lobby_StartButton.h" />
+    <ClInclude Include="LobbyToLumiaPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LobbyUIController.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Lobby_ButtonOne.h" />
+    <ClInclude Include="Lobby_ButtonTwo.h" />
+    <ClInclude Include="Lobby_CharFull.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Lobby_PortraitBg.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LumiaLoadingManager.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LumiaMap.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LobbyBackground.h" />
+    <ClInclude Include="MonsterInfo.h" />
+    <ClInclude Include="MonsterInfoManager.h" />
+    <ClInclude Include="Monsters.h" />
+    <ClInclude Include="MonsterStateInfo.h" />
+    <ClInclude Include="PacketSoundPlay.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PlayerUIController.h" />
+    <ClInclude Include="MousePointer.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Rio.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ItemBase.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ItemBox.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ItemBoxManager.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ItemBoxWindow.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="KeyboardClass.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="KeyboardEvent.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CustomVertex.h" />
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="LobbyLevel.h" />
+    <ClInclude Include="LumiaLevel.h" />
+    <ClInclude Include="MiscItem.h" />
+    <ClInclude Include="NavMesh.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="AStarNode.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PlayerInfo.h" />
+    <ClInclude Include="PlayerInfoManager.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PlayerNumberPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ReadyPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ResultLevel.h" />
+    <ClInclude Include="RioArrow.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RioDSkill.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ServerTestLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="SetPlayerNumberPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="SettingItemLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StartPointSelectPacket.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TempLobbyRenderer.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TestLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TestOBB.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleBG.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleFoxLogo.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleIDInput.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleLevel.h" />
+    <ClInclude Include="TitlePrologueBG.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleStartButton.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleUIController.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UIButton.h" />
+    <ClInclude Include="UI_CharPicture.h" />
+    <ClInclude Include="UI_Equip.h" />
+    <ClInclude Include="UI_Inventory.h" />
+    <ClInclude Include="Macro.h" />
+    <ClInclude Include="UI_ItemBox.h" />
+    <ClInclude Include="UI_ItemSettingHelper.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UI_Status.h" />
+    <ClInclude Include="TestPlayer.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MeshLoadLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PreCompile.h" />
+    <ClInclude Include="UI_Skill.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UI_TestMouse.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="IUnit.h" />
+    <ClInclude Include="UI_Time.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UseableItem.h" />
+    <ClInclude Include="UserGame.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UserGame_Resources_Shader.h" />
+    <ClInclude Include="Weekline.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Wolf.h" />
+    <ClInclude Include="Yuki.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="YukiESlashEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="YukiQEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="YukiQSlashEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="YukiREffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
